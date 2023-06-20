@@ -1,0 +1,6 @@
+
+{
+	"out": "./drizzle",
+	"schema": "./src/lib/neon/schema.ts",
+	"breakpoints": false
+}

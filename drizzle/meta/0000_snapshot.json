@@ -1,0 +1,30 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "id": "6901ef77-dfa3-4f7c-878f-24a00733a513",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "tables": {
+    "auth_user": {
+      "name": "auth_user",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "varchar(15)",
+          "primaryKey": true,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {}
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
