@@ -9,5 +9,10 @@ const [url, state] = await githubAuth.getAuthorizationUrl();
         maxAge: 60 * 60
     });
     // redirect to authorization url
-    throw redirect(302,url.toString())
+	return new Response(null, {
+		status: 302,
+		headers: {
+			location: url.toString()
+		}
+	});
 }
