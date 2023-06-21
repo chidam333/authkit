@@ -6,5 +6,6 @@ export const handle: Handle = async ({ event, resolve }) => {
 	console.log({auth,event})
 	event.locals.auth = auth.handleRequest(event);
 	console.log({auth2:event.locals.auth})
-	return resolve(event);
+	const response = await resolve(event);
+	return response
 };	

@@ -1,8 +1,5 @@
 <!-- routes/login/+page.svelte -->
 <script lang="ts">
-	const oauth = async()=>{
-		const response = await fetch('/api/oauth')
-	}
 </script>
 
 <div>
@@ -14,5 +11,5 @@
 		<input type="password" id="password" name="password" /><br />
 		<input type="submit" value="Continue" />
 	</form>
-	<button on:click={oauth}>sign in with github</button>
+	<a href="/api/oauth">sign in with github</a>
 </div>
